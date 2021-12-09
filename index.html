@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb refactor</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+<nav class="bg-black">
+    <!--nav container-->
+    <div class="invisible md:visible flex max-w-3xl py-4 justify-between mx-auto">
+
+        <!--nav left-->
+        <div class="flex items-center">
+            <img src="images/airbnb.svg" alt="airbnb logo" class="w-20 h-20">
+        </div>
+
+        <!--nav middle-->
+
+        <div class="flex items-center space-x-4">
+            <a href="">Places to stay</a><a href="">Experiences</a><a href="">Online Experiences</a>
+        </div>
+        <!--nav right-->
+        <div class="flex items-center">
+            <span class="text-sm">Become a Host</span>
+            <div class="mx-6 flex items-center">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                </a>
+            </div>
+            <button class=" flex justify-center items-center py-1 space-x-2 px-8 bg-gray-50 rounded-xl ml-4"><img src="images/log-in.svg" alt="">
+
+                <a href="#">
+                    <img src="images/log-in.svg" alt="Sign in icon">
+                </a>
+
+
+                <img src="images/hamburger%20icon.png" alt="Hamburger icon" class="mr-4 w-4 h-4">
+            </button>
+
+        </div>
+    </div>
+    <!--sub nav-->
+    <div class="invisible md:visible flex max-w-xl py-1 justify-between mx-auto border bg-gray-50 my-4 rounded-full text-gray-900 text-sm px-3 items-center">
+
+        <div class="p-1.5 bg-blue-100">
+            <div class="flex flex-col pr-4 justify-items-start border-r-2 border-white-500 py-4">
+                <span class="font-medium">Location</span>
+                <p class="text-left text-grey-500 text-xs">Where are you going</p>
+            </div>
+        </div>
+        <div class="flex flex-col pr-12 justify-items-start border-r-2 border-grey-500 py-4"><span class="font-medium">Check in</span>
+            <p class="text-gray-500 text-xs">Add dates</p>
+        </div>
+
+        <div class="flex flex-col pr-12 justify-items-start border-r-2 border-grey-500 py-4"><span class="font-medium">Check out</span>
+            <p class="text-gray-500 text-xs">Add dates</p>
+        </div>
+
+        <div class="flex flex-col pr-12 justify-items-start border-r-2 border-grey-500 py-4"><span class="font-medium">Guests</span>
+            <p class="text-gray-500 text-xs ">Add guests</p>
+        </div>
+        <div class="flex justify-center items-center rounded-full bg-red-500 rounded w-16 h-16 py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+        </div>
+    </div>
+</nav>
+<div class="flex flex-col justify-between bg-gray-200 h-screen items-center py-6 bg-center bg-cover" style="background-image: url('images/Screen Shot 2021-12-08 at 3.04.43 PM.png')">
+    <div>
+        <label for="mobile-search"></label><input type="search" value="Where are you going" id="mobile-search" class="p-2 rounded-full w-full px-12 outline-none md:hidden">
+    </div>
+    <div class="flex flex-col items-center">
+        <h1 class="text-white">You are not sure where to go? Perfect.</h1>
+        <button class="bg-gray-300 py-2 px-12 mt-4 rounded-full">
+           Submit
+        </button>
+    </div>
+</div>
+</body>
+</html>
