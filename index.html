@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Airbnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & Experiences</title>
     <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="bg-black md:px-14 md:py-14">
+<body class="bg-black md:px-14 md:py-2">
 
-<nav class="hidden md:block">
+
+<nav class="hidden md:block text-lg">
     <div class="md:container-2xl md:mx-auto">
-        <div class="flex justify-between bg-black py-6 text-gray-400">
+        <div class="flex justify-between items-center font-semibold bg-black py-6 text-gray-400">
             <!--nav first div-->
             <div class="flex w-80px h-30px bg-white">
                 <img src="images/Airbnb-Logo.png" alt="">
@@ -41,94 +42,121 @@
                     </svg>
                 </div>
 
-                <button class="flex px-8 py-4 bg-gray-200 rounded-full ml-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor">
+                <button class="flex px-3 py-2 bg-gray-200 rounded-full ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black pt-1" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
 
                     <svg class="ml-3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                         focusable="false" style="display: block; height:24px; width:24px; fill: currentcolor;">
+                         focusable="false" style="display: block; height:32px; width:32px; fill: currentcolor;">
                         <path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"></path>
                     </svg>
                 </button>
             </div>
         </div>
-        <div>
-            <!--sub nav-->
-            <div class="flex justify-between items-center bg-white mb-12 p-4 rounded-full max-w-6xl mx-auto">
-                <div class="border-r-2 pr-8">
-                    <h4>Location</h4>
-                    <p>Where are you going?</p>
-                </div>
-                <div class="border-r-2 pr-8 text-left">
-                    <h4>Check in</h4>
-                    <p>Add dates</p>
-                </div>
-                <div class="border-r-2 pr-8 text-center">
-                    <h4>Check out</h4>
-                    <p>Add dates</p>
-                </div>
-                <div class="flex justify-between items-center">
-                    <div>
-                        <h4>Guests</h4>
-                        <p>Add guests</p>
-                    </div>
-                    <div class="h-24px w24-px ml-6 rounded-full bg-pink-800 p-8">
-                        <img src="images/Search_Icon.png" alt="">
-                    </div>
-                </div>
+    </div>
+    <!--sub nav-->
+    <div class="flex justify-between items-center bg-white mb-12 px-4 py-0 rounded-full max-w-6xl mx-auto">
+        <div class="pt-3.5 pr-6 pb-3.5 pl-6 overflow-hidden relative whitespace-nowrap w-full z-1 box-border border-r-2 block">
+            <h6 class="font-semibold">Location</h6>
+            <p>Where are you going?</p>
+        </div>
+
+        <div class="pt-3.5 pr-6 pb-3.5 pl-6 overflow-hidden relative whitespace-nowrap w-full z-1 box-border border-r-2 block">
+            <h6 class="font-semibold">Check in</h6>
+            <p>Add dates</p>
+        </div>
+
+        <div class="pt-3.5 pr-6 pb-3.5 pl-6 overflow-hidden relative whitespace-nowrap w-full z-1 box-border border-r-2 block">
+            <h6 class="font-semibold">Check out</h6>
+            <p>Add dates</p>
+        </div>
+
+        <div class="flex justify-between space-x-4 items-center block pt-3.5 pr-6 pb-3.5 pl-6">
+            <div class="pt-3.5 pr-6 pb-3.5 pl-6 mr-3 overflow-hidden whitespace-nowrap w-full z-1 box-border block">
+                <h6 class="font-semibold">Guests</h6>
+                <p>Add guests</p>
+            </div>
+            <div class="flex ml-6px p-6 relative z-5 bg-red-500 rounded-full">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="flex h-8 w-8 rounded-full pl-1 pt-1 text-white text-lg" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 </nav>
 
-<div class="flex flex-col justify-between bg-gray-200 h-screen items-center py-6 bg-center bg-cover md:rounded-2xl" style="background-image: url('images/tent.png')">
+<div class="flex flex-col justify-between bg-gray-200 h-screen items-center py-6 bg-center bg-cover md:rounded-2xl"
+     style="background-image: url('images/tent.png')">
 
     <div>
-        <label for="mobile-search"></label><input type="search" value="Where are you going?" id="mobile-search" class="p-2 rounded-full w-full px-12 outline-none md:hidden">
+        <label for="mobile-search"></label><input type="search" value="Where are you going?"
+                                                  id="mobile-search"
+                                                  class="p-2 rounded-full w-full px-12 outline-none md:hidden">
     </div>
 
     <div class="flex flex-col items-center">
-        <h1 class="text-white text-4xl text-center">Not sure where to go? <br>Perfect.</h1>
-        <button class="bg-white text-pink-700 py-2 px-12 mt-4 rounded-full my-6">
+        <h1 class="text-white text-4xl">Not sure where to go? Perfect.</h1>
+        <button class="bg-white text-pink-700 font-bold py-2 px-12 mt-4 rounded-full my-6">
             I'm flexible
         </button>
     </div>
 </div>
 
-<div class="flex justify-between items-center md:hidden bg-white py-4 px-8">
-    <div class="flex flex-col items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="#FF385C">
-            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-        </svg>
-        <a href="#"><img src="#" alt="">
-            <h4 class="text-gray-400 text-sm">Explore</h4></a>
+<!--mobile bottom nav-->
+<div class="flex justify-between md:hidden bg-white py-4 px-2">
+
+    <!--explore icon-->
+    <div class="flex flex-col">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 hover:text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <h4 class="text-gray-400 hover:text-black">Explore</h4>
+        </a>
     </div>
-    <div class="flex flex-col items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-        <a href="#"><img src="#" alt="">
-            <h4 class="text-sm">Wishlists</h4></a>
+    <!--heart icon-->
+    <div class="flex flex-col">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 hover:text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <h4 class="text-gray-400 hover:text-black">Wishlists</h4>
+        </a>
     </div>
-    <div class="flex flex-col items-center">
-        <img src="images/airbnb_icon.svg" class="h-8 w-8">
-        <a href="#"><img src="#" alt="">
-            <h4 class="text-sm">Trips</h4></a>
+    <!--trips icon-->
+    <div class="flex flex-col">
+        <a href="#">
+            <svg viewBox="0 0 32 32" class="text-gray-400 hover:text-red-600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                <path d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206C4.5 27.395 6.411 29 8.857 29c1.773 0 3.87-1.236 5.831-3.354-2.295-2.938-3.855-6.45-3.855-8.91 0-2.913 1.933-5.386 5.178-5.42 3.223.034 5.156 2.507 5.156 5.42 0 2.456-1.555 5.96-3.855 8.907C19.277 27.766 21.37 29 23.142 29c2.447 0 4.358-1.605 4.358-4.478l-.004-.411c-.019-.672-.17-1.296-.714-2.62l-.248-.6c-1.065-2.478-5.993-12.768-7.538-15.664C18.053 3.539 17.24 3 16 3zm.01 10.316c-2.01.021-3.177 1.514-3.177 3.42 0 1.797 1.18 4.58 2.955 7.044l.21.287.174-.234c1.73-2.385 2.898-5.066 2.989-6.875l.006-.221c0-1.906-1.167-3.4-3.156-3.421h-.001z"></path>
+            </svg>
+            <h4 class="text-gray-400 hover:text-black">Trips</h4>
+        </a>
     </div>
-    <div class="flex flex-col items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z" clip-rule="evenodd" />
-        </svg>
-        <a href="#"><img src="#" alt="">
-            <h4 class="text-sm">Inbox</h4></a>
+    <!--message/inbox icon-->
+    <div class="flex flex-col">
+        <a href="#">
+            <svg viewBox="0 0 32 32" class="text-gray-400 hover:text-red-600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                <path d="m26 2c2.6887547 0 4.8818181 2.12230671 4.9953805 4.78311038l.0046195.21688962v14c0 2.6887547-2.1223067 4.8818181-4.7831104 4.9953805l-.2168896.0046195h-5.845l-4.1548949 5.0792674-4.1561051-5.0792674h-5.844c-2.61406707 0-4.75959878-2.0060384-4.98113724-4.5626572l-.01424325-.2204532-.00461951-.2168896v-14c0-2.6887547 2.12230671-4.88181811 4.78311038-4.99538049l.21688962-.00461951zm0 2h-20c-1.59768088 0-2.90366088 1.24891996-2.99490731 2.82372721l-.00509269.17627279v14c0 1.5976809 1.24891996 2.9036609 2.82372721 2.9949073l.17627279.0050927h6.7918643l3.2071357 3.92 3.2080542-3.92h6.7929458c1.5976809 0 2.9036609-1.24892 2.9949073-2.8237272l.0050927-.1762728v-14c0-1.59768088-1.24892-2.90366088-2.8237272-2.99490731z"></path>
+            </svg>
+            <h4 class="text-gray-400 hover:text-black">Inbox</h4>
+        </a>
     </div>
-    <div class="flex flex-col items-center">
-        <img src="images/profile.svg" class="h-8 w-8">
-        <a href="#"><img src="#" alt="">
-            <h4 class="text-sm">Profile</h4></a>
+    <!--profile icon-->
+    <div class="flex flex-col">
+        <a href="#">
+            <svg viewBox="0 0 32 32" class="text-gray-400 hover:text-red-600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                <path d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z"></path>
+            </svg>
+            <h4 class="text-gray-400 hover:text-black">Profile</h4>
+        </a>
     </div>
 </div>
 </body>
